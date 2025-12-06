@@ -96,6 +96,7 @@ nav a {
     color: white;
     text-decoration: none;
     font-size: 14px;
+    cursor: pointer;
 }
 
 nav a:hover {
@@ -113,7 +114,7 @@ nav a:hover {
 }
 
 .login-btn:hover {
-    background-color: #3d8de6;
+    background-color: #5097e9;
     color: white;
 }
 

@@ -1,73 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Bisbo</title>
     <link rel="stylesheet" href="diss.css">
 </head>
+
 <body>
     <div class="login-container">
         <div class="login-box">
             <div class="logo">
                 <svg viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5zm0 18c-3.86-.97-7-5.11-7-9V8.3l7-3.5 7 3.5V11c0 3.89-3.14 8.03-7 9z"/>
-                    <circle cx="12" cy="12" r="3"/>
+                    <path
+                        d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5zm0 18c-3.86-.97-7-5.11-7-9V8.3l7-3.5 7 3.5V11c0 3.89-3.14 8.03-7 9z" />
+                    <circle cx="12" cy="12" r="3" />
                 </svg>
                 <h1>Bisbo</h1>
             </div>
-            
+
             <h2>Welcome Back!</h2>
             <p class="subtitle">We're so excited to see you again!</p>
-            
+
             <form class="login-form">
                 <div class="form-group">
                     <label for="email">Email or Phone Number</label>
                     <input type="text" id="email" name="email" required>
                 </div>
-                
+
                 <div class="form-group">
                     <label for="password">Password</label>
                     <input type="password" id="password" name="password" required>
                 </div>
-                
+
                 <a href="#" class="forgot-password">Forgot your password?</a>
-                
+
                 <a href="diss.html" class="login-btn">Log In</a>
-                
+
                 <div class="register-prompt">
                     <span>Need an account?</span>
                     <a href="#" class="register-link">Register</a>
                 </div>
             </form>
         </div>
-        
+
         <div class="character-decoration">
-            <img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/6707a0ea5ddb44cae1dd6b29_clyde_pose_02%201.webp" alt="Character Decoration" class="floating-character">
+            <img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/6707a0ea5ddb44cae1dd6b29_clyde_pose_02%201.webp"
+                alt="Character Decoration" class="floating-character">
         </div>
     </div>
-
-    <script>
-        // Smooth page transitions
-        document.addEventListener('DOMContentLoaded', function() {
-            const links = document.querySelectorAll('a[href$=".html"]');
-            
-            links.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    const href = this.getAttribute('href');
-                    
-                    // Skip if it's an anchor link or external
-                    if (href.startsWith('#') || href.startsWith('http')) return;
-                    
-                    e.preventDefault();
-                    document.body.classList.add('page-transition-out');
-                    
-                    setTimeout(() => {
-                        window.location.href = href;
-                    }, 400);
-                });
-            });
-        });
-    </script>
+    <script src="login.js"></script>
 </body>
+
 </html>
